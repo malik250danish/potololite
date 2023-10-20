@@ -80,6 +80,8 @@ body {
 .serviceCard {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     min-height: 300px;
+    position: relative;
+    transition: 0.5s ease-in-out;
 }
 
 .CardImage {
