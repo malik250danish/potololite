@@ -1,0 +1,40 @@
+.nav-pills .nav-link.active {
+    background-color: #07b53b !important;
+    border-radius: 20px !important;
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #07b53b !important
+}
+
+
+
+.btnDetails {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    background-color: transparent;
+    border: 1px solid #fff;
+
+}
+
+.serviceCard:hover .btnDetails {
+    display: block;
+}
+
+.serviceCard:hover::before {
+    display: block;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #0101015b;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+
+
+}
