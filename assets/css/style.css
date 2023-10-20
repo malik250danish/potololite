@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero-container {
+    position: relative;
+    min-height: 1000px;
+    height: 100vh;
+    color: white;
+    /* background-color: url("./assets/images/heroBG.jpg");
+
+         */
+    background-color: black;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+.flex-cont {
+    font-size: 40px;
+    min-height: 500px;
+    min-width: 200px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-container2 {
+    flex-direction: row;
+}
+
+.reveal-container {
+    position: relative;
+}
+
+.reveal-box {
+    z-index: 4;
+    position: absolute;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #267af2;
+}
+
+.hero-text2 {
+    opacity: 0;
+}
+
+.hero-slide img {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Initial styling for the hero slides */
+.hero-slide {
+    position: relative;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Initially hide all sections except the hero section */
+.container-fluid>*:not(.hero-container) {
+    display: none;
+}
+
+.serviceCard {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    min-height: 300px;
+}
+
+.CardImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.bgi2 {
+    width: 100%;
+    background-image: url('../image/i7.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 150px 0px;
+    background-attachment: fixed;
+
+}
+
+.bg-con {
+    background-color: #f7f8f9;
+}
+
+.mCard {
+    background: transparent !important;
+    border: 0px !important;
+    text-align: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.logoImage {
+    border: 1px solid rgba(206, 206, 206, 0.699);
+    border-radius: 15px;
+}
+
+.content button {
+    border: 1px solid rgba(206, 206, 206, 0.699);
+    transition: .4s ease !important;
+}
+
+.content button:hover {
+    background-color: #07b53b;
+}
+
+.content button:hover a {
+    color: #ffffff !important;
+}
+
+.content button a i {
+    font-size: 20px;
+}
+
+.content button a {
+    color: black !important;
+    transition: .4s ease !important;
+}
+
+.content p span {
+    color: #07b53b;
+    font-size: 20px;
+}
+
+.content p {
+    color: #868686;
+    font-size: 20px;
+}
+
+.secOneImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+/* footer  */
+.footerTop img {
+    border-radius: 5px;
+}
+
+.footerTop ul,
+.footerBottom ul {
+    list-style: none;
+}
+
+.footerTop ul li a,
+.footerBottom ul li a {
+    color: rgb(0, 0, 0) !important;
+}
+
+.footerBottom ul li a {
+    font-size: 13px;
+    border-right: 1px solid rgb(131, 131, 131);
+    padding-right: 10px;
+}
+
+.footerTop ul li a {
+    border-right: 1px solid rgb(131, 131, 131);
+    padding-right: 10px;
+}
